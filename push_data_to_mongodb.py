@@ -48,9 +48,9 @@ class NetworkDataExtract():
             raise NetworkSecurityException(e,sys)
         
 if __name__=='__main__':
-    FILE_PATH="network_data\phisingData.csv"
-    DATABASE="KRISHAI"
-    Collection="NetworkData"
+    FILE_PATH="network_data\fall_detection_data.csv"
+    DATABASE="MLops"
+    Collection="FallData"
     networkobj=NetworkDataExtract()
     records=networkobj.csv_to_json_convertor(file_path=FILE_PATH)
     print(records)
